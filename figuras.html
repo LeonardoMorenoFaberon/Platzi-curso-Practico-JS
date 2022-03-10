@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+
+    <header>
+       
+    <h1>Figuras Geométricas</h1>
+        <p>Es el primer taller del curso práctico de javascript</p>
+    </header>
+    <section>
+        <h2>Calcula el área  y perímetro  de un cuadrado </h2>
+        <form action="">
+                <label for="inputCuadrado">Escribe Cuánto mide cada lado de tu cuadrado: </label>
+                <input id="inputCuadrado" type="number" >
+            <button type="button" id="idButtonCuadrado" >Calcular Propiedades del Cuadrado</button>
+            <!-- <button type="button" >Calcular el Área</button> -->
+       
+            <div id="showCuadradoPerimetro" class="showCuadradoProps"></div>   
+            <div id="showCuadradoArea" class="showCuadradoProps"></div>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula las propiedades de un triangulo partiendo de sus tres lados</h2>
+         <form action="#" class="triangulo">
+
+                <label for="inputTrianguloBase">introduce base del triangulo</label>
+                <input type="number" id="inputTrianguloBase">
+
+                 <label for="inputTriagulolado_b">introduce lado b del triangulo</label>
+                 <input type="number" id="inputTriangulolado_b">
+
+                 <label for="inputTriagulolado_c">introduce lado c del triangulo</label>
+                 <input type="number" id="inputTriangulolado_c">
+
+                 <button id="idButtonTriangulo"  >Calcular Propiedades del Triangulo</button>
+        
+             <div id="showTriangleHeight" class="showTriangleProps"></div>   
+             <div id="showTriangleArea" class="showTriangleProps"></div>
+             <div id="showTrianglePerimeter" class="showTriangleProps"></div>
+             <div id="showTriangleType" class="showTriangleProps"></div>
+        </form>   
+
+    </section>
+    
+    <script src="triangulo.js"></script>
+    <script src="figuras.js"></script>
+</body>
+</html>

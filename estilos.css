@@ -1,0 +1,68 @@
+*{
+    margin:none;
+    padding:none;
+}
+:root{
+    --width_button: 50% ;
+    --padding-button : calc(var(--width_button)/2)
+}
+
+
+body{
+    background-color: rgb(99, 140, 168);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size:2em;
+    background-color: rgb(115, 149, 172);
+    border:none;
+    border-bottom: 1px solid red;
+    border-radius: 0.2em;  
+    outline: none;
+    padding-left: 0.5em;
+}
+form label{
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+button {
+    padding: .6rem 1rem;
+    width: var(--width_button);
+    margin-top : 10px;
+    margin-left : calc( var(--width_button) / 2 );
+    border: 1px solid #995309;
+    border-radius: 4px;
+    background-color: #d9750b;
+    color: #fff;
+  
+    font-size: 1.5rem;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+      0 1px 3px rgba(0,0,0,.2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+    background-image: linear-gradient(#f90 10%,#e76a00 100%);
+  }
+button:hover, button:focus {
+    background-color: #e0811b;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  }
+  .showTriangleProps{
+      color : white;
+      font-size: 1.2em;
+  }
