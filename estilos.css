@@ -18,14 +18,50 @@ header{
     display: flex;
     flex-direction: column;
 }
+.cuadradoDibujo{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    background-color: #995309;
+}
+.trianguloDibujo {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #f0ad4e;
+    align-self: center;
+}
+.circunferenciaDibujo {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+    align-self: center;
+}
 
 section{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-content: center;
+    border: 1px solid white;
+    border-radius: 2em;
+    margin-bottom: 2em;
+}
+h2{
+    width:fit-content;
+    align-self: center;
+    padding: 0.5em;
 }
 form{
     display: flex;
     flex-direction: column;
+    width: 90%;
+    align-self: center;
 }
 input{
     font-size:2em;
@@ -35,10 +71,17 @@ input{
     border-radius: 0.2em;  
     outline: none;
     padding-left: 0.5em;
+    /* width: 360px; */
 }
 form label{
     margin-top: 1em;
     font-size: 1.5em;
+    padding: auto;
+    /* border:1px solid yellow; */
+    /* align-content: center; */
+    /* align-self: center;
+    align-items: center; */
+    /* width: 360px; */
 }
 button {
     padding: .6rem 1rem;
@@ -50,7 +93,7 @@ button {
     background-color: #d9750b;
     color: #fff;
   
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
       0 1px 3px rgba(0,0,0,.2);

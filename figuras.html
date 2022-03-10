@@ -16,6 +16,7 @@
     </header>
     <section>
         <h2>Calcula el área  y perímetro  de un cuadrado </h2>
+        <div class="cuadradoDibujo"></div>
         <form action="showCuadradoPerimetro">
                 <label for="inputCuadrado">Escribe Cuánto mide cada lado de tu cuadrado: </label>
                 <input id="inputCuadrado" type="number" >
@@ -29,7 +30,8 @@
 
     <section>
         <h2>Calcula las propiedades de un triangulo partiendo de sus tres lados</h2>
-         <form action="showTriangleType" class="triangulo">
+        <div class="trianguloDibujo"></div>
+        <form action="showTriangleType" class="triangulo">
 
                 <label for="inputTrianguloBase">introduce base del triangulo</label>
                 <input type="number" id="inputTrianguloBase">
@@ -52,12 +54,13 @@
 
     <section>
         <h2>Calcula las propiedades de una Circunferencia Partiendo del RADIO</h2>
-         <form action="showCircunferenciaDiametro" class="circunferencia">
+        <div class="circunferenciaDibujo"></div> 
+        <form action="showCuadradoPerimetro" class="circunferencia">
 
             <label for="inputCircunferenciaRadio">introduce radio de Circunferencia</label>
                 <input type="number" id="inputCircunferenciaRadio">
 
-                 <button id="idButtonCircunferencia" type="button" >Calcular Propiedades del Triangulo</button>
+                 <button id="idButtonCircunferencia" type="button" >Calcular Propiedades de la Circunferencia</button>
         
              <div id="showCircunferenciaDiametro" class="showFigureProps"></div>   
              <div id="showCircunferenciaArea" class="showFigureProps"></div>
