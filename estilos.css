@@ -62,7 +62,8 @@ button:hover, button:focus {
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
     background-image: linear-gradient(#f0a100 10%,#f70 100%);
   }
-  .showTriangleProps{
+  .showFigureProps{
       color : white;
       font-size: 1.2em;
+      height: 1.2em;
   }

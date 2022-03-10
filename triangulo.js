@@ -12,6 +12,7 @@ class Triangulo{
         this.minLado_c =  this.getLongitudMinimaDelLado_c();
         this.altura =  this.getAltura();
         this.perimetro =  this.getPerimetro();
+        this.type = this.getTypeOfTriangle();
     }
 
     getAltura_leo(){
@@ -65,5 +66,25 @@ class Triangulo{
 
         }
          
+    }//
+
+    getTypeOfTriangle(){
+        // equilatero
+        if(this.base ==  this.lado_b && this.base ==  this.lado_c){
+            return "triangulo equilatero";            
+        }
+        // isoceles
+        else if(
+            this.lado_b == this.lado_c || 
+            this.base == this.lado_b || 
+            this.base == this.lado_c){
+            return "triangulo isoceles";
+        }
+        // rectangulo
+        else if(cuad(this.base) + cuad(this.lado_b)   == cuad(this.lado_c) ||
+                cuad(this.base) + cuad(this.lado_c)   == cuad(this.lado_b) ||
+                cuad(this.lado_b)+cuad(this.lado_c)   ==  cuad(this.base)  ){ 
+            return  "triangulo Rectangulo";        
+        }
     }
 }
