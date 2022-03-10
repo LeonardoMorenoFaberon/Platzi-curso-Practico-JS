@@ -43,8 +43,6 @@
         return Math.pow(num , .5);
     }
 
-    
-
 
 //Cuadrado :
 console.group("cuadrado"); 
