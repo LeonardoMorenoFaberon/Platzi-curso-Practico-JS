@@ -30,9 +30,9 @@
     var myCircunferencia
 
     
-    inputBaseTriangulo.value   = 3;
-    inputlado_bTriangulo.value = 4;
-    inputlado_cTriangulo.value = 5; 
+    // inputBaseTriangulo.value   = 3;
+    // inputlado_bTriangulo.value = 4;
+    // inputlado_cTriangulo.value = 5; 
 
 
     function cuad(num){
@@ -44,17 +44,17 @@
     }
 
 
-//Cuadrado :
-console.group("cuadrado"); 
-console.groupEnd('cuadrado');
+// //Cuadrado :
+// console.group("cuadrado"); 
+// console.groupEnd('cuadrado');
 
-//Triangulo:
-console.group('triangulo');
-console.groupEnd(`triangulo`);
+// //Triangulo:
+// console.group('triangulo');
+// console.groupEnd(`triangulo`);
 
-//Circulo
-console.group('circulo');
-console.groupEnd('circulo');
+// //Circulo
+// console.group('circulo');
+// console.groupEnd('circulo');
 
 
 

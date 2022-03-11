@@ -9,3 +9,9 @@ Platzi curso practico de js
 -Tercer paso : crear funciones.
 -Cuarto paso : integrar JS con HTML
 -
+## Taller numero 2 Porcentajes y Descuentos:
+-Primer paso :definir las formulas.
+-Segundo paso : implementar las formulas en js.
+-Tercer paso : crear funciones.
+-Cuarto paso : integrar JS con HTML.
+    

@@ -32,6 +32,13 @@ header{
     border-left: 100px solid transparent;
     border-bottom: 100px solid #f0ad4e;
     align-self: center;
+
+    position: relative;
+    top: -110px;
+}
+#formTriangulo{
+    position: relative;
+    top: -110px;
 }
 .circunferenciaDibujo {
     width: 100px;
