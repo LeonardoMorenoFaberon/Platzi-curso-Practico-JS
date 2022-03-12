@@ -22,6 +22,7 @@ const inputPrice     = document.getElementById('inputPrice');
 const inputCoupon = document.getElementById("InputCoupon");
 const buttonDiscount = document.getElementById('buttonDiscount');
 const resultPrice     = document.getElementById('resultPrice');
+const apretonDeManosImg =  document.getElementById('apretonDeManosImg');
 
 const borrarResultado =  ()=>{
     resultPrice.innerText="";
@@ -48,19 +49,28 @@ function insertarPrecioConDescuento(preciofinal){
 
 }
 
+function visibilidadAImagen(){
+    apretonDeManosImg.classList.remove('display_none');
+}
+function invisiblilidadAImagen(){
+    if(!apretonDeManosImg.classList.contains('display_none') ){
+        apretonDeManosImg.classList.add('display_none');
+    }
+}
 
 //EVENTOS DE BUTTONS Y DE INPUTS:
 buttonDiscount.addEventListener('click' , ()=>{
     insertarPrecioConDescuento(
         isPriceDiscountedWithCoupon(inputPrice.value , inputCoupon.value)
                         );
+     visibilidadAImagen()
+
  });
 
-// inputPrice.addEventListener('keypress' , ()=>{borrarResultado()});
-// inputCoupon.addEventListener('keypress' ,()=>{borrarResultado()});
 
-
+//limpiamos el resultado cada que ingresmos datos nuevos en los inputs
 formularioDescuento.addEventListener('keypress', (e)=>{
     borrarResultado();
+    invisiblilidadAImagen();
 })
 

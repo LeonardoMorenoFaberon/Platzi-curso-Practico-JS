@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y Descuentos | Curso Practico de JS</title>
+    <link rel="stylesheet" href="styleDescuentos.css">
 </head>
 
 <body>
-    <headeer>
+    <header>
         <p>Este es el segundo Taller del curso practico de javascript</p>
+        <p class="color_gray">por Leonardo Moreno Faberón</p>
         <h1>Porcentajes y Descuentos:</h1>
-    </headeer>
+    </header>
 
     <section>
         <h2>Calcula el precio a pagar en tus productos con descuento</h2>
-        <form action="" id="formDescuentos1">
+        <form action="" id="formDescuentos1" class="hundido–claro–despues ">
             <label for="inputPrice">
-                Escribe el precio de tu producto:
+                Precio:
             </label>
             <input type="number" id="inputPrice">
-            <label for="InputCoupon">Escribe el cupón de descuento para tu producto:</label>
+            <label for="InputCoupon">Cupón de descuento para tu producto:</label>
             <input id="InputCoupon" type="text" />
                
             <button type="button" id="buttonDiscount">
                 Calcular Descuento
             </button>
+            <div>
+                <img src="./svg/apretonManos.svg" alt="apreton de manos" id="apretonDeManosImg" class="display_none"></div>
             <p id="resultPrice">
 
             </p>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;}
+body{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 360px;
+    flex-direction: column;
+}
+
+header p{
+    /* border:1px solid green; */
+}
+header h1{
+    /* border:1px solid gold */
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+section h2{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+section form{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    border-radius: 10px;
+    border: 1px solid red;
+    width: 80%;
+    display: flex;
+        
+    margin: 1em auto 0 auto ;
+    
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+label{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em  0;
+
+
+}
+input{
+    line-height: 2em;
+    border-radius: 10px;
+    font-size: 1.1em;
+    width: 80%;
+    border: .5px solid gold;
+    align-self: center;
+    padding:0 auto;
+    text-align: center;
+}
+
+button{
+    line-height: 2em;
+    width: 80%;
+    align-self: center;
+    margin: 1em auto;
+    border-radius: .5em;
+    background-color: red;
+    font-size: 1.2em;
+    border: none;
+    border-style: none;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+button:{
+    border:1px solid blue
+}
+#apretonDeManosImg{
+    width: 10em;
+    height: 10em;
+    /* border: 1px solid red; */
+    align-self: center;
+    margin-left: calc( 360px * 0.8 / 2 - 10em/2);
+}
+.display_none{
+    display: none;
+}
+
+#resultPrice{
+    margin: 1em 0em;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align: center;
+}
+.color_gray{
+    color: gray;
+}
